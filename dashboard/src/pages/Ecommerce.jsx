@@ -97,7 +97,7 @@ const Ecommerce = () => {
                 <p className='text-gray-500 mt-1'>Expense</p>
               </div>
 
-              <div className='mt-5'>
+              {/* <div className='mt-5'>
                 <SparkLine
                   currentColor="blue"
                   id="line-sparkline"
@@ -107,7 +107,7 @@ const Ecommerce = () => {
                   data={SparklineAreaData}
                   color="blue"
                 />
-              </div>
+              </div> */}
 
               <div className='mt-10'>
                 <Button
