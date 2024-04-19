@@ -1,31 +1,36 @@
-import React from 'react'
-import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts';
+// import React from 'react'
+// import { SparklineComponent, Inject, SparklineTooltip } from '@syncfusion/ej2-react-charts';
 
-const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
-  return (
-    <SparklineComponent
-      id={id}
-      height={height}
-      width={width}
-      lineWidth={1}
-      valueType='Numeric'
-      fill={color}
-      border={{ color: currentColor, width: 2 }}
-      dataSource={data}
-      xName='x'
-      yName='y'
-      type={type}
-      tooltipSettings={{
-        visible: true,
-        format: '${x} : data ${y}',
-        trackLineSettings: {
-          visible: true
-        }
-      }}
-    >
-      <Inject services={[SparklineTooltip]} />
-    </SparklineComponent>
-  )
-}
+// import { SparklineAreaData } from '../../data/dummy';
+// import { useStateContext } from '../../contexts/ContextProvider';
 
-export default SparkLine
+// const SparkLine = () => {
+//   const { currentColor } = useStateContext();
+
+//   return (
+//     <SparklineComponent
+//       id='line-sparkline'
+//       height='80px'
+//       width='250px'
+//       lineWidth={1}
+//       valueType='Numeric'
+//       fill={currentColor}
+//       border={{ color: currentColor, width: 2 }}
+//       dataSource={SparklineAreaData}
+//       xName='x'
+//       yName='y'
+//       type='Line'
+//       tooltipSettings={{
+//         visible: true,
+//         format: '${x} : data ${y}',
+//         trackLineSettings: {
+//           visible: true
+//         }
+//       }}
+//     >
+//       <Inject services={[SparklineTooltip]} />
+//     </SparklineComponent>
+//   )
+// }
+
+// export default SparkLine
